@@ -4,23 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a6f21f8317.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="font-display text-[#111111]">
     <header>
-        <nav>
-            <!-- nav-left -->
-             <div></div>
-             <!-- nav-mid -->
-              <div></div>
-              <!-- nav-right -->
-               <div></div>
-        </nav>
+      <nav class="bg-[#fff9f4] py-3 px-4 lg:py-5 lg:px-6">
+        <div class="flex  items-center justify-between max-w-[1440px] mx-auto">
+          <!-- nav-left -->
+          <div>
+            <div class="flex items-center gap-2">
+              <img src="src/c1-assets/logo-header.png" alt="paw" />
+              <h1 class="text-[26px] font-display hidden sm:block">
+                Browse<span class="text-[#FFDC26]">4</span>Pets
+              </h1>
+            </div>
+          </div>
+
+          <!-- nav-mid -->
+          <div class="hidden xl:block">
+            <ul class="flex gap-8 text-xl">
+              <li class="list-none">Find a pet</li>
+              <li class="list-none">Breeds</li>
+              <li class="list-none">Contact Us</li>
+            </ul>
+          </div>
+          <!-- nav-right -->
+          <div class="flex gap-5 items-center">
+            <div class="hidden md:block">
+              <i class="fa-regular fa-bell text-3xl"></i>
+            </div>
+            <div class="hidden md:block"">
+            <i class="fa-solid fa-magnifying-glass hidden text-3xl"></i>
+          </div>
+          <button
+            class="border border-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium font-display hidden md:block"
+          >
+            Login
+          </button>
+          <button
+            class="bg-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium font-display hidden md:block"
+          >
+            Register
+          </button>
+          <div class="xl:hidden">
+            <i class="fa-solid fa-bars text-4xl"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
