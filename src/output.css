@@ -9676,6 +9676,11 @@
       height: calc(var(--spacing) * 80);
     }
   }
+  .xl\:gap-6 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .xl\:text-6xl\/tight {
     @media (width >= 80rem) {
       font-size: var(--text-6xl);
