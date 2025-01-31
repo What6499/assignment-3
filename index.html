@@ -46,13 +46,9 @@
             <div class="hidden md:block">
               <i class="fa-solid fa-magnifying-glass hidden text-3xl"></i>
             </div>
+            <button class="btn  btn-outline bg-transparent border-[#ffdf20] py-2.5 px-8 rounded-lg text-xl font-medium hidden md:flex items-center hover:bg-yellow-300">Login</button>
             <button
-              class="border border-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium hidden md:block"
-            >
-              Login
-            </button>
-            <button
-              class="bg-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium hidden md:block"
+              class="btn  bg-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium hidden md:flex items-center"
             >
               Register
             </button>
@@ -82,7 +78,7 @@
 
           <div>
             <button
-              class="bg-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium text-[#111111]"
+              class="btn relative before:animate-ping before:absolute before:inset-0 before:border-2 before:rounded-xl before:border-yellow-300 bg-yellow-300 py-6 px-8 rounded-lg text-xl font-medium hidden md:flex items-center"
             >
               Find a pet
             </button>
@@ -174,7 +170,7 @@
         </div>
       </section>
       <!---------------------------- Trending Pet Section ------------------------------>
-      <section class="bg-[#fff9f4] py-36 ">
+      <section class="bg-[#fff9f4] py-36">
         <div class="max-w-[1440px] mx-auto px-4 bg-[#fff9f4]">
           <h1
             class="text-2xl font-title mb-8 sm:text-3xl lg:text-4xl md:mb-9 lg:mb-12"
@@ -190,14 +186,14 @@
               class="bg-[#f9df8a] row-span-4 col-span-2 sm:col-span-3 relative h-80 rounded-xl md:row-span-3 md:col-span-2 md:h-auto md:w-auto"
             >
               <div class="px-7 py-11 flex flex-col gap-y-3">
-                <h1 class="font-title text-2xl">T-Shirt For Dogs</h1>
-                <p class="text-xs text-gray-600">
+                <h1 class="font-title text-2xl lg:text-3xl">T-Shirt For Dogs</h1>
+                <p class="text-xs lg:text-sm text-gray-600">
                   Discover a world of Treats, Toys and <br />
                   Essentials handpicked for Dogs
                 </p>
                 <div>
                   <button
-                    class="py-1.5 px-6 rounded-lg text-xl font-medium bg-white"
+                    class="btn py-5 px-6 rounded-lg text-xl font-medium bg-white"
                   >
                     Shop Now
                   </button>
@@ -370,49 +366,136 @@
         </div>
       </section>
       <!----------------------------- low-price section ----------------------------->
-      <section class="mt-14  lg:mt-36">
+      <section class="mt-14 lg:mt-36">
         <div class="max-w-[1440px] mx-auto px-4">
           <h1
             class="text-2xl font-title mb-8 sm:text-3xl lg:text-4xl md:mb-9 lg:mb-12"
           >
             Everyday Low Price
           </h1>
-          <div class="grid grid-cols-1  grid-rows-[357px_357px] gap-3 md:gap-6  md:flex md:h-[512px] md:w-full ">
+          <div
+            class="grid grid-cols-1 grid-rows-[357px_357px] gap-3 md:gap-6 md:flex md:h-[512px] md:w-full"
+          >
             <div
-              class="rounded-2xl bg-linear-to-br  from-fuchsia-200 to-cyan-200 relative md:grow-[5]"
+              class="rounded-2xl bg-linear-to-br from-fuchsia-200 to-cyan-200 relative md:grow-[5]"
             >
-              <div class="flex  pl-9 pt-10  flex-col gap-y-2 h-full xl:justify-center lg:pl-16">
-                <h3 class="text-xl hidden [@media(min-width:420px)]:block">Under Price</h3>
+              <div
+                class="flex pl-9 pt-10 flex-col gap-y-2 h-full xl:justify-center lg:pl-16"
+              >
+                <h3 class="text-xl hidden [@media(min-width:420px)]:block">
+                  Under Price
+                </h3>
                 <div>
                   <h1 class="font-title text-2xl lg:text-[42px]">
                     Pet Grooming Mitt
                   </h1>
-                  <span class="font-title [@media(min-width:420px)]:block lg:text-2xl text-white hidden">(Easy Hair Removal)</span>
+                  <span
+                    class="font-title [@media(min-width:420px)]:block lg:text-2xl text-white hidden"
+                    >(Easy Hair Removal)</span
+                  >
                 </div>
-                <h1 class="font-title text-4xl lg:text-6xl">$7.99</h1></div>
-                <div >
-
-                  <img class="h-[264px] w-[214px] sm:h-[320px] sm:w-[260px]  absolute bottom-0 right-0 xl:h-[480px] xl:w-auto " src="src\c1-assets\cute-dog-mid.png" alt="">
-                </div>
+                <h1 class="font-title text-4xl lg:text-6xl">$7.99</h1>
+              </div>
+              <div>
+                <img
+                  class="h-[264px] w-[214px] sm:h-[320px] sm:w-[260px] absolute bottom-0 right-0 xl:h-[480px] xl:w-auto"
+                  src="src\c1-assets\cute-dog-mid.png"
+                  alt=""
+                />
+              </div>
             </div>
-             
+
             <div
               class="relative bg-linear-[100deg] from-[#FFF9F4] to-amber-100 rounded-2xl pl-9 pt-10 md:grow-[3]"
             >
-              <div class="flex-col flex gap-y-2 ">
-                
-
-                  <h2 class="font-title text-2xl lg:text-[42px]">T-Shirt for Dogs</h2>
-                  <h1 class="font-title text-4xl lg:text-6xl text-[#FFDC26]">$7.99</h1>
-                
+              <div class="flex-col flex gap-y-2">
+                <h2 class="font-title text-2xl lg:text-[42px]">
+                  T-Shirt for Dogs
+                </h2>
+                <h1 class="font-title text-4xl lg:text-6xl text-[#FFDC26]">
+                  $7.99
+                </h1>
               </div>
               <div>
-                <img class="h-[264px] w-[214px] sm:h-[320px] sm:w-[260px]  absolute bottom-0 right-0 xl:h-[400px] xl:w-auto" src="src/c1-assets/cute-pet-mid.png" alt="">
+                <img
+                  class="h-[264px] w-[214px] sm:h-[320px] sm:w-[260px] absolute bottom-0 right-0 xl:h-[400px] xl:w-auto"
+                  src="src/c1-assets/cute-pet-mid.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
+      
     </main>
+    <footer class="mt-80 bg-[#ffed92] pb-14 px-4 pt-[366px] relative">
+      <!-- pawsomenews -->
+      <div class="max-w-[1456px] px-4 w-full absolute top-0 -translate-y-[50%] left-[50%] -translate-x-[50%] ">
+        <div class="bg-[#fff9f4] py-8 w-full px-4 rounded-2xl">
+          <div
+            class="flex flex-col text-center md:flex-row items-center justify-center gap-6 md:gap-32 md:pt-10 "
+          >
+            <div class="h-60 w-48 md:h-auto md:w-auto"><img  src="src/c1-assets/cute-pet-mid.png" alt="" /></div>
+            <!-- pawsome-texts -->
+            <div class="flex flex-col items-center gap-y-3 md:gap-y-9">
+              <h1 class="text-[1.375rem] lg:text-4xl font-title">Get Pawsome News!</h1>
+              <p class="md:text-xl">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <input
+                class="bg-white rounded-2xl border-none p-[18px] max-w-[472px] w-full"
+                type="email"
+                name="email"
+                id="user-email"
+                placeholder="Enter email..."
+              />
+              <div>
+                <button
+                  class="btn   bg-yellow-300 py-6 px-8 rounded-lg text-xl font-medium  flex items-center"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1440px] mx-auto flex flex-col  md:justify-between md:flex-row  md:items-end gap-y-9 md:gap-y-0 ">
+        <!-- footer-left -->
+        <div class="space-y-5">
+          <div class="flex items-center gap-x-2.5">
+            <div><img src="src/c1-assets/logo-footer.png" alt="" /></div>
+            <h1 class="text-[26px] ">
+              Browse<span class="text-[#e0b700]">4</span>Pets
+            </h1>
+          </div>
+          <p class="text-gray-600">
+            Discover a world of treats, toys, and <br />
+            essentials handpicled for your furry <br />
+            friends
+          </p>
+        </div>
+        <!-- footer-mid -->
+
+        <div class="md:-translate-x-[50%]">
+          <ul class="space-y-5 md:space-y-8">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- footer-right -->
+        <div class="space-y-2">
+          <h1>Follow Us</h1>
+          <div class="space-x-5">
+            <a  href=""><i class="fa-brands fa-facebook"></i></a
+              ><a  href=""><i class="fa-brands fa-instagram"></i></a
+              ><a  href=""><i class="fa-brands fa-linkedin"></i></a
+              ><a  href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
