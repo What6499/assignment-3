@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+@plugin "daisyui";
 @theme {
   --font-title:  "ADLaM Display", "sans-serif";
   --font-display: "sora", "sans-serif"
