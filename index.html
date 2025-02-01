@@ -18,7 +18,9 @@
   </head>
   <body class="text-[#111111] font-display">
     <header>
-      <nav class="bg-[#fff9f4] py-3 px-4 lg:py-5 lg:px-6 border-b border-b-gray-300 sm:border-0 ">
+      <nav
+        class="bg-[#fff9f4] py-3 px-4 lg:py-5 lg:px-6 border-b border-b-gray-300 sm:border-0"
+      >
         <div class="flex items-center justify-between max-w-[1440px] mx-auto">
           <!------------------ nav-left --------------->
           <div>
@@ -49,9 +51,9 @@
               ></i>
             </div>
             <button
-              class="btn btn-outline bg-transparent border-[#ffdf20] py-2.5 px-8 rounded-lg text-xl font-medium hidden md:flex items-center hover:bg-yellow-300"
+              class="btn btn-outline bg-transparent border-[#ffdf20] py-2.5 px-8 rounded-lg text-xl font-medium hidden md:flex items-center relative before:absolute before:inset-0 before:bg-yellow-300 before:scale-x-0 hover:before:scale-x-100 before:origin-left before:transition-transform before:duration-200 overflow-hidden"
             >
-              Login
+              <span class="z-10"> Login </span>
             </button>
             <button
               class="btn bg-yellow-300 py-2.5 px-8 rounded-lg text-xl font-medium hidden md:flex items-center"
@@ -84,7 +86,7 @@
 
           <div>
             <button
-              class="btn relative sm:before:animate-ping before:absolute before:inset-0 before:border-2 before:rounded-xl before:border-yellow-300 bg-yellow-300 py-6 px-8 rounded-lg text-xl font-medium flex items-center"
+              class="btn relative bouncy bg-yellow-300 hover:scale-105 transition-transform duration-200 py-6 px-8 rounded-lg text-xl font-medium flex items-center"
             >
               Find a pet
             </button>
@@ -202,7 +204,7 @@
           >
             <!-------------------- big-card -------------------->
             <div
-              class="bg-[#f9df8a] row-span-4 col-span-2 sm:col-span-3 relative h-80 rounded-xl md:row-span-3 md:col-span-2 md:h-auto md:w-auto drop-shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+              class="bg-[#f9df8a] row-span-4 col-span-2 sm:col-span-3 relative h-80 rounded-xl md:row-span-3 md:col-span-2 md:h-auto md:w-auto drop-shadow-sm sm:drop-shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
             >
               <div class="px-7 py-11 flex flex-col gap-y-3">
                 <h1 class="font-title text-2xl lg:text-3xl">
@@ -568,13 +570,13 @@
           class="bg-[#fff9f4] py-8 w-full px-4 rounded-2xl shadow-sm hover:shadow-lg transition-shadow"
         >
           <div
-            class="flex flex-col text-center md:flex-row items-center justify-center gap-6 md:gap-32 md:pt-10"
+            class="flex flex-col text-center md:text-justify md:flex-row items-center justify-center gap-6 md:gap-32 md:pt-10"
           >
             <div class="h-60 w-48 md:h-auto md:w-auto">
               <img src="src/c1-assets/cute-pet-mid.png" alt="" />
             </div>
             <!-- pawsome-texts -->
-            <div class="flex flex-col items-center gap-y-3 md:gap-y-9">
+            <div class="flex flex-col items-center md:items-start gap-y-3 md:gap-y-9">
               <h1 class="text-[1.375rem] lg:text-4xl font-title">
                 Get Pawsome News!
               </h1>
@@ -582,7 +584,7 @@
                 Exclusive training tips, ticks, product deals and more.
               </p>
               <input
-                class="bg-white rounded-2xl border-none p-[18px] max-w-[472px] w-full"
+                class="bg-white  rounded-2xl border border-gray-300 focus:outline-0 p-[18px] max-w-[472px] w-full"
                 type="email"
                 name="email"
                 id="user-email"
@@ -629,10 +631,10 @@
         <div class="space-y-2">
           <h1>Follow Us</h1>
           <div class="space-x-5">
-            <a href=""><i class="fa-brands fa-facebook"></i></a
-            ><a href=""><i class="fa-brands fa-instagram"></i></a
-            ><a href=""><i class="fa-brands fa-linkedin"></i></a
-            ><a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook text-2xl"></i></a
+            ><a href=""><i class="fa-brands fa-instagram text-2xl"></i></a
+            ><a href=""><i class="fa-brands fa-linkedin text-2xl"></i></a
+            ><a href=""><i class="fa-brands fa-youtube text-2xl"></i></a>
           </div>
         </div>
       </div>

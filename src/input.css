@@ -5,3 +5,10 @@
   --font-title:  "ADLaM Display", "sans-serif";
   --font-display: "sora", "sans-serif"
 }
+@keyframes bouncy {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+.bouncy {
+  animation: bouncy 1s infinite;
+}
