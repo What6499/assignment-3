@@ -7289,6 +7289,12 @@
     --tw-gradient-position: in oklab,;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\.\.\/src\/c1-assets\/cat-big\.png\)\] {
+    background-image: url(../src/c1-assets/cat-big.png);
+  }
+  .bg-\[url\(\.\/src\/c1-assets\/cat-big\.png\)\] {
+    background-image: url(./src/c1-assets/cat-big.png);
+  }
   .bg-\[url\(\/src\/c1-assets\/cat-big\.png\)\] {
     background-image: url(/src/c1-assets/cat-big.png);
   }
@@ -9479,6 +9485,14 @@
     @media (width >= 40rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .sm\:before\:animate-ping {
+    @media (width >= 40rem) {
+      &::before {
+        content: var(--tw-content);
+        animation: var(--animate-ping);
+      }
     }
   }
   .md\:col-span-2 {
