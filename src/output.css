@@ -6280,74 +6280,8 @@
   .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
-  .grid-cols-\[\(autofit\,1fr\)\] {
-    grid-template-columns: (autofit,1fr);
-  }
-  .grid-cols-\[\[\]\] {
-    grid-template-columns: [];
-  }
-  .grid-cols-\[\[autofit\,1fr\]\] {
-    grid-template-columns: [autofit,1fr];
-  }
-  .grid-cols-\[autofit\,1fr\] {
-    grid-template-columns: autofit,1fr;
-  }
-  .grid-cols-\[repeat\(\)\] {
-    grid-template-columns: repeat();
-  }
-  .grid-cols-\[repeat\(auto-fit\,\)\] {
-    grid-template-columns: repeat(auto-fit,);
-  }
-  .grid-cols-\[repeat\(auto-fit\,10rem\)\] {
-    grid-template-columns: repeat(auto-fit,10rem);
-  }
-  .grid-cols-\[repeat\(auto-fit\,13rem\)\] {
-    grid-template-columns: repeat(auto-fit,13rem);
-  }
-  .grid-cols-\[repeat\(auto-fit\,1fr\)\] {
-    grid-template-columns: repeat(auto-fit,1fr);
-  }
-  .grid-cols-\[repeat\(auto-fit\,400px\)\] {
-    grid-template-columns: repeat(auto-fit,400px);
-  }
-  .grid-cols-\[repeat\(auto-fit\,min\)\] {
-    grid-template-columns: repeat(auto-fit,min);
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax());
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(9\.5rem\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(9.5rem,1fr));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(9\.rem\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(9.rem,1fr));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(9rem\,\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(9rem,));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(9rem\,13rem\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(9rem,13rem));
-  }
   .grid-cols-\[repeat\(auto-fit\,minmax\(9rem\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fit,minmax(9rem,1fr));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(10\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(10));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(10rem\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
-  }
-  .grid-cols-\[repeat\(autofit\,1fr\)\] {
-    grid-template-columns: repeat(autofit,1fr);
-  }
-  .grid-cols-\[repeat\(autofit\,400px\)\] {
-    grid-template-columns: repeat(autofit,400px);
-  }
-  .grid-cols-\[repeat\(autofit\,400pxfr\)\] {
-    grid-template-columns: repeat(autofit,400pxfr);
-  }
-  .grid-cols-\[repeat\] {
-    grid-template-columns: repeat;
   }
   .grid-cols-none {
     grid-template-columns: none;
@@ -9581,6 +9515,11 @@
       width: 260px;
     }
   }
+  .sm\:animate-none {
+    @media (width >= 40rem) {
+      animation: none;
+    }
+  }
   .sm\:grid-cols-3 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -9645,11 +9584,6 @@
       height: calc(var(--spacing) * 64);
     }
   }
-  .md\:h-\[16\.25rem\] {
-    @media (width >= 48rem) {
-      height: 16.25rem;
-    }
-  }
   .md\:h-\[512px\] {
     @media (width >= 48rem) {
       height: 512px;
@@ -9658,11 +9592,6 @@
   .md\:h-auto {
     @media (width >= 48rem) {
       height: auto;
-    }
-  }
-  .md\:w-\[13\.5rem\] {
-    @media (width >= 48rem) {
-      width: 13.5rem;
     }
   }
   .md\:w-auto {
@@ -9765,11 +9694,6 @@
       row-gap: calc(var(--spacing) * 9);
     }
   }
-  .md\:py-8 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 8);
-    }
-  }
   .md\:py-10 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 10);
@@ -9832,19 +9756,9 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
-  .lg\:py-1 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 1);
-    }
-  }
   .lg\:py-5 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 5);
-    }
-  }
-  .lg\:py-15 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 15);
     }
   }
   .lg\:pl-16 {
