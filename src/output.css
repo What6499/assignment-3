@@ -7292,6 +7292,9 @@
   .bg-\[url\(\/src\/c1-assets\/cat-big\.png\)\] {
     background-image: url(/src/c1-assets/cat-big.png);
   }
+  .bg-\[url\(src\/c1-assets\/cat-big\.png\)\] {
+    background-image: url(src/c1-assets/cat-big.png);
+  }
   .bg-none {
     background-image: none;
   }
